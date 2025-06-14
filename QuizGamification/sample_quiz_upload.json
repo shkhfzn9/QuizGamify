@@ -1,0 +1,39 @@
+{
+  "algebra-basic": {
+    "title": "Basic Algebra Quiz",
+    "category": "Math",
+    "difficulty": "easy",
+    "questions": [
+      {
+        "questionText": "What is 2 + 2?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correctOption": 3
+      },
+      {
+        "questionText": "Solve: 3x = 12. What is x?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctOption": 2
+      },
+      {
+        "questionText": "What is the value of x in x + 5 = 10?",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correctOption": 1
+      }
+    ]
+  }
+}

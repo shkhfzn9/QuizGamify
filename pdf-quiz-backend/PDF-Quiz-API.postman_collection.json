@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "pdf-quiz-api-collection",
+    "name": "PDF Quiz API",
+    "description": "Test collection for PDF to Quiz API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/",
+          "host": ["{{base_url}}"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Upload PDF and Generate Quiz",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "pdf",
+              "type": "file",
+              "src": [],
+              "description": "Select a PDF file to upload"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url}}/api/quiz/generate",
+          "host": ["{{base_url}}"],
+          "path": ["api", "quiz", "generate"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000",
+      "type": "string"
+    }
+  ]
+}

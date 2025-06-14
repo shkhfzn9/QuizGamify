@@ -1,0 +1,98 @@
+/* src/styles/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.animate-fade-in-out {
+    animation: fadeInOut 2s ease-in-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Auth page background pattern */
+.auth-bg {
+    background-color: #f9fafb;
+    background-image:
+        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.1) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.1) 0px, transparent 50%);
+}
+
+/* Leaderboard podium styles */
+.podium-first {
+    box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.3);
+}
+
+.podium-second {
+    box-shadow: 0 4px 6px -1px rgba(156, 163, 175, 0.3);
+}
+
+.podium-third {
+    box-shadow: 0 4px 6px -1px rgba(180, 83, 9, 0.3);
+}
+
+/* Badge glow effect */
+.badge-glow {
+    box-shadow: 0 0 10px 2px rgba(234, 179, 8, 0.5);
+}
